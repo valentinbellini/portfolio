@@ -60,9 +60,9 @@
 }
 
 .navbar-nav-list-item a{
-    color: #f44;
+    color: #fff;
     font-weight: 500;
-    opacity: 0.7;
+    opacity: 0.9;
     transition: 0.2s;
 }
 

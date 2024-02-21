@@ -4,25 +4,36 @@
 .presentation-box{
 	margin-top: 30px;
     display: flex;
+	flex-direction: column;
     flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-}
-
-.presentation-box-img {
-    padding: 10px;
-    height: 5rem;
 }
 
 .presentation-box-quote h1{
     display: flex;
     flex-direction: column;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .presentation-box-quote-name{
     color: #f44;
+}
+
+.presentation-box-info{
+	font-size: 1.5em;
+}
+.presentation-box-info strong{
+	color: rgb(255, 96, 96);
+	font-weight: 400;
+}
+
+@media screen and (min-width: 764px) {
+	.presentation-box-info{
+		font-size: 1.25rem;
+		width: 70%;
+	}
 }
 
 .presentation-tech-logos{

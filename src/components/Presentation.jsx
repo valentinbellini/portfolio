@@ -4,15 +4,18 @@ export const Presentation = () => {
     return (
         <section className="presentation">
             <div className='presentation-box'> 
-                <div className='presentation-box-img'>
-                    <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' alt='bitmoji de Valentin Bellini'></img>          
-                </div>
                 <div className='presentation-box-quote'>
                     <h1>
-                        <span>Hola, soy</span>
+                        Hey, soy
                         <span className='presentation-box-quote-name'>Valentin</span>
-                        <span></span>
                     </h1>
+                </div>
+                <div className='presentation-box-info'>
+                    <p>
+                       <strong>Estudiante avanzado de ingenieria electrónica. </strong> 
+                       Vivo en Rosario, Argentina. Actualmente me estoy especializando en 
+                       <strong> Inteligencia artificial y análisis de datos.</strong>
+                    </p>
                 </div>
             </div>
             <div className='presentation-tech-logos'>     
