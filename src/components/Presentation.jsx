@@ -5,7 +5,7 @@ export const Presentation = () => {
         <section className="presentation">
             <div className='presentation-box'> 
                 <div className='presentation-box-img'>
-                    <img src='./bitmoji.png' alt='bitmoji de Valentin Bellini'></img>          
+                    <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' alt='bitmoji de Valentin Bellini'></img>          
                 </div>
                 <div className='presentation-box-quote'>
                     <h1>

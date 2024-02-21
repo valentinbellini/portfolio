@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { BurgerMenuIcon } from './BurgerMenuIcon.jsx'
 import './Navbar.css'
 
 export const Navbar = () => {
-    const tags = ['Inicio', 'About Me', 'Projects', 'Contact']
+    const tags = ['Home', 'About Me', 'Projects', 'Contact']
+
     const [navOpen, setNavOpen] = useState(false)
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -27,7 +29,7 @@ export const Navbar = () => {
             <nav className="navbar-nav">
                 {windowWidth <= 500 && (
                     <button className="navbar-nav-toggle" aria-label="Abrir menú" onClick={toggleMenu}>
-                        Toggle
+                        <BurgerMenuIcon />
                     </button>
                 )}
                 <ul className={windowWidth <= 500 ? (navOpen ? 'navbar-nav-list show-toggled' : 'navbar-nav-list no-show-toggled') : 'navbar-nav-list'}>

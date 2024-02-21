@@ -4,8 +4,10 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
+    opacity: 0.9;
 }
+
 .navbar-nav{
     display: flex;
     max-width: 1200px;
@@ -14,9 +16,13 @@
     margin: 0 auto;
 }
 
+.navbar-nav-toggle{
+    background-color: transparent;
+}
+
 .navbar-nav-list {
     display: flex;
-    background-color: #242424;
+    background-color: rgba(10,10,10,0.7);
     border-radius: 20px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -62,6 +68,7 @@
 
 .navbar-nav-list-item a:hover{
     opacity: 1;
+    color: #f55;
 }
 
 .navbar-nav-toggle{
