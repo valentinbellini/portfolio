@@ -1,10 +1,11 @@
-import './App.css'
+import { Presentation } from './components/Presentation'
+
 
 function App() {
 
   return (
     <>
-      <h1>Valentins portfolio</h1>
+      <Presentation />
     </>
   )
 }
