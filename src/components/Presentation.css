@@ -2,6 +2,7 @@
 
 /* -------------------- SECTION 2 -------------------- */
 .presentation-box{
+	margin-top: 30px;
     display: flex;
     flex: 1;
     flex-wrap: wrap;
