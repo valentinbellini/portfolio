@@ -6,18 +6,36 @@ export const Projects = () => {
     const projectsData = [
         {
             id: 1,
-            title: "Proyecto 1",
-            description: "Descripción del Proyecto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            technologies: ["React", "Node.js", "MongoDB"],
+            title: "Virtual Assitant",
+            description: "En este repositorio encontraras un asistente virtual comandado por voz realizado con Python.",
+            technologies: ["Python"],
             image: "https://th.bing.com/th/id/OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8?rs=1&pid=ImgDetMain",
             demoLink: "https://example.com/demo1",
             githubLink: "https://github.com/yourusername/project1"
         },
         {
             id: 2,
-            title: "Proyecto 2",
-            description: "Descripción del Proyecto 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            technologies: ["Python", "Django", "PostgreSQL"],
+            title: "Credit-Data-Tree",
+            description: "Análisis y entrenamiento de modelos de riesgo crediticio.",
+            technologies: ["Python", "Jupyter", "Scikit-learn"],
+            image: "https://th.bing.com/th/id/OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8?rs=1&pid=ImgDetMain",
+            demoLink: "https://example.com/demo2",
+            githubLink: "https://github.com/yourusername/project2"
+        },
+        {
+            id: 3,
+            title: "Inventario SQL",
+            description: "Diseño de aplicación para control de inventario con Python y base de datos SQL",
+            technologies: ["Python", "SQLite"],
+            image: "https://th.bing.com/th/id/OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8?rs=1&pid=ImgDetMain",
+            demoLink: "https://example.com/demo2",
+            githubLink: "https://github.com/yourusername/project2"
+        },
+        {
+            id: 4,
+            title: "Connect-Four",
+            description: "Juego de 2 jugadores diseñado a partir del tic tac toe",
+            technologies: ["JavaScript", "React", "CSS"],
             image: "https://th.bing.com/th/id/OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8?rs=1&pid=ImgDetMain",
             demoLink: "https://example.com/demo2",
             githubLink: "https://github.com/yourusername/project2"
@@ -29,19 +47,24 @@ export const Projects = () => {
 
     return (
         <div className='projects'>
+            <h2>Projects</h2>
             <ul className="projects-container">
                 {projectsData.map(project => (
-                    <li key={project.id} >
-                        <img src={(`${project.image}`)} alt={project.title} className='projects-container-project-img'/>
+                    <li key={project.id} > 
+                        <div className='project-img'> 
+                            <img src={(`${project.image}`)} alt={project.title} className='projects-container-project-img'/>
+                            </div>
                         <div className="project-info">
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
-                            <p><strong>Tecnologías utilizadas:</strong> {project.technologies.join(', ')}</p>
-                            <div className="project-links">
-                                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">Ver Demo</a>
-                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
-                            </div>
+                            <p>{project.technologies.join(' ')}</p>
+                            
                         </div>
+                        <div className="project-links">
+                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />          
+                                </a>
+                            </div>
                     </li>
                 ))}
             </ul>
