@@ -2,7 +2,7 @@ import './Presentation.css'
 
 export const Presentation = () => {
     return (
-        <section className="presentation">
+        <section className="presentation" id="Home">
             <div className='presentation-box'> 
                 <div className='presentation-box-quote'>
                     <h1>
